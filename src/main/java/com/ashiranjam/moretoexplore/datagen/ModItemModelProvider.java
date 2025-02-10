@@ -14,5 +14,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.MYTHRIL_INGOT.get());
+        basicItem(ModItems.RAW_MYTHRIL.get());
     }
 }

@@ -1,5 +1,6 @@
 package com.ashiranjam.moretoexplore;
 
+import com.ashiranjam.moretoexplore.block.ModBlocks;
 import com.ashiranjam.moretoexplore.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -18,6 +19,9 @@ public class ModCreativeModeTabs {
                     .title(Component.literal("More To Explore"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.MYTHRIL_INGOT.get());
+                        output.accept(ModItems.RAW_MYTHRIL.get());
+                        output.accept(ModBlocks.MYTHRIL_BLOCK.get());
+                        output.accept(ModBlocks.RAW_MYTHRIL_BLOCK.get());
 
                     }).build());
 
