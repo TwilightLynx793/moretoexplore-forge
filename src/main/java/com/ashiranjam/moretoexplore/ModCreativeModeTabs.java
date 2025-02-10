@@ -1,0 +1,27 @@
+package com.ashiranjam.moretoexplore;
+
+import com.ashiranjam.moretoexplore.item.ModItems;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+
+public class ModCreativeModeTabs {
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MoreToExplore.MOD_ID);
+
+    public static final RegistryObject<CreativeModeTab> MORE_TO_EXPLORE_TAB = CREATIVE_MODE_TABS.register("more_to_explore_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MYTHRIL_INGOT.get()))
+                    .title(Component.literal("More To Explore"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.MYTHRIL_INGOT.get());
+
+                    }).build());
+
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
+    }
+}

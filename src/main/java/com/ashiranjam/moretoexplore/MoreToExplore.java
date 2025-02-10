@@ -1,5 +1,6 @@
 package com.ashiranjam.moretoexplore;
 
+import com.ashiranjam.moretoexplore.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,6 +31,9 @@ public class MoreToExplore
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
