@@ -1,6 +1,7 @@
 package com.ashiranjam.moretoexplore.datagen;
 
 import com.ashiranjam.moretoexplore.block.ModBlocks;
+import com.ashiranjam.moretoexplore.item.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
@@ -30,10 +31,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.MYTHRIL_BLOCK.get());
         dropSelf(ModBlocks.RAW_MYTHRIL_BLOCK.get());
 
-        //this.add(ModBlocks.ALEXANDRITE_ORE.get(),
-               // block -> createOreDrop(ModBlocks.ALEXANDRITE_ORE.get(), ModItems.RAW_ALEXANDRITE.get()));
-        //this.add(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get(),
-                //block -> createMultipleOreDrops(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get(), ModItems.RAW_ALEXANDRITE.get(), 2, 6));
+        this.add(ModBlocks.MYTHRIL_ORE.get(),
+                block -> createOreDrop(ModBlocks.MYTHRIL_ORE.get(), ModItems.RAW_MYTHRIL.get()));
+
+        this.add(ModBlocks.DEEPSLATE_MYTHRIL_ORE.get(),
+                block -> createOreDrop(ModBlocks.DEEPSLATE_MYTHRIL_ORE.get(), ModItems.RAW_MYTHRIL.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

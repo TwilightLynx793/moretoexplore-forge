@@ -1,7 +1,13 @@
-// 1.21.1	2025-02-10T21:55:45.9399703	Block States: moretoexplore
+// 1.21.1	2025-02-11T13:02:46.1727624	Block States: moretoexplore
+426427d2fffe0b4ef1e86851e178d8c7a5612034 assets/moretoexplore/blockstates/deepslate_mythril_ore.json
 19103f3d6ea300ae427f5dd80118f7dfeb2b8f81 assets/moretoexplore/blockstates/mythril_block.json
+8b42ee1d8cf307d8fe8b82da8a9bef2929a43c42 assets/moretoexplore/blockstates/mythril_ore.json
 e43024725253845a89de98a5c65537f690bdc2c3 assets/moretoexplore/blockstates/raw_mythril_block.json
+b976ecb2a8ac998a85e76b6e5531409f41f76f2f assets/moretoexplore/models/block/deepslate_mythril_ore.json
 f76c5f705cbc75976f8d64bb52eacbd8e46e7724 assets/moretoexplore/models/block/mythril_block.json
+9c59cddaa76f3132e5efa76720f889d5ee84ad0c assets/moretoexplore/models/block/mythril_ore.json
 327b90ef294331e545fabb909edaaa16e9ead597 assets/moretoexplore/models/block/raw_mythril_block.json
+e3da1086fb20fc15cade0ed1f0b4b40627e9e248 assets/moretoexplore/models/item/deepslate_mythril_ore.json
 fd21a00997d505ba4c3f4be0995958282381f5d3 assets/moretoexplore/models/item/mythril_block.json
+c896980a97ecc55cb8be3d5647fd67eddf1d39ab assets/moretoexplore/models/item/mythril_ore.json
 8cab2db75c1a1b81fe3177a3dc36e5719523f5c1 assets/moretoexplore/models/item/raw_mythril_block.json

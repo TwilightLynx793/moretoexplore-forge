@@ -1,7 +1,7 @@
 package com.ashiranjam.moretoexplore.item;
 
 import com.ashiranjam.moretoexplore.MoreToExplore;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,6 +16,26 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_MYTHRIL = ITEMS.register("raw_mythril",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MYTHRIL_SWORD = ITEMS.register("mythril_sword",
+            () -> new SwordItem(ModToolTiers.MYTHRIL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.MYTHRIL, 4, -2.4f))));
+
+    public static final RegistryObject<Item> MYTHRIL_PICKAXE = ITEMS.register("mythril_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.MYTHRIL, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.MYTHRIL, 1.5f, -2.8f))));
+
+    public static final RegistryObject<Item> MYTHRIL_SHOVEL = ITEMS.register("mythril_shovel",
+            () -> new ShovelItem(ModToolTiers.MYTHRIL, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.MYTHRIL, 2f, -3.0f))));
+
+    public static final RegistryObject<Item> MYTHRIL_AXE = ITEMS.register("mythril_axe",
+            () -> new AxeItem(ModToolTiers.MYTHRIL, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.MYTHRIL, 7, -3.1f))));
+
+    public static final RegistryObject<Item> MYTHRIL_HOE = ITEMS.register("mythril_hoe",
+            () -> new HoeItem(ModToolTiers.MYTHRIL, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.MYTHRIL, -2, -1f))));
 
 
     public static void register(IEventBus eventBus) {

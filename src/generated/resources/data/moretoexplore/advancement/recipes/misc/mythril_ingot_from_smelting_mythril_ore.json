@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mythril_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "moretoexplore:mythril_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "moretoexplore:mythril_ingot_from_smelting_mythril_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mythril_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "moretoexplore:mythril_ingot_from_smelting_mythril_ore"
+    ]
+  }
+}

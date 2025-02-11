@@ -20,10 +20,14 @@ public class ModBlockTagProvider extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.MYTHRIL_BLOCK.get())
-                .add(ModBlocks.RAW_MYTHRIL_BLOCK.get());
+                .add(ModBlocks.RAW_MYTHRIL_BLOCK.get())
+                .add(ModBlocks.MYTHRIL_ORE.get())
+                .add(ModBlocks.DEEPSLATE_MYTHRIL_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MYTHRIL_BLOCK.get())
-                .add(ModBlocks.RAW_MYTHRIL_BLOCK.get());
+                .add(ModBlocks.RAW_MYTHRIL_BLOCK.get())
+                .add(ModBlocks.MYTHRIL_ORE.get())
+                .add(ModBlocks.DEEPSLATE_MYTHRIL_ORE.get());
     }
 }

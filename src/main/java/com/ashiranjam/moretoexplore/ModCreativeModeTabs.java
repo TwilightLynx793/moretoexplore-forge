@@ -22,6 +22,14 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_MYTHRIL.get());
                         output.accept(ModBlocks.MYTHRIL_BLOCK.get());
                         output.accept(ModBlocks.RAW_MYTHRIL_BLOCK.get());
+                        output.accept(ModBlocks.MYTHRIL_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_MYTHRIL_ORE.get());
+
+                        output.accept(ModItems.MYTHRIL_SWORD.get());
+                        output.accept(ModItems.MYTHRIL_PICKAXE.get());
+                        output.accept(ModItems.MYTHRIL_SHOVEL.get());
+                        output.accept(ModItems.MYTHRIL_AXE.get());
+                        output.accept(ModItems.MYTHRIL_HOE.get());
 
                     }).build());
 

@@ -27,6 +27,14 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
+    public static final RegistryObject<Block> MYTHRIL_ORE = registerBlock("mythril_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> DEEPSLATE_MYTHRIL_ORE = registerBlock("deepslate_mythril_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

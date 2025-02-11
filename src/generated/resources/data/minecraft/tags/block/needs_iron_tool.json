@@ -1,6 +1,8 @@
 {
   "values": [
     "moretoexplore:mythril_block",
-    "moretoexplore:raw_mythril_block"
+    "moretoexplore:raw_mythril_block",
+    "moretoexplore:mythril_ore",
+    "moretoexplore:deepslate_mythril_ore"
   ]
 }

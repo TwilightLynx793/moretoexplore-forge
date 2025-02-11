@@ -17,6 +17,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.MYTHRIL_BLOCK);
         blockWithItem(ModBlocks.RAW_MYTHRIL_BLOCK);
+        blockWithItem(ModBlocks.MYTHRIL_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_MYTHRIL_ORE);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
