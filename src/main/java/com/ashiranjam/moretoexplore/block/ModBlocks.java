@@ -5,10 +5,10 @@ import com.ashiranjam.moretoexplore.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -34,6 +34,27 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_MYTHRIL_ORE = registerBlock("deepslate_mythril_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+
+    public static final RegistryObject<StairBlock> MYTHRIL_STAIRS = registerBlock("mythril_stairs",
+            () -> new StairBlock(ModBlocks.MYTHRIL_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<SlabBlock> MYTHRIL_SLAB = registerBlock("mythril_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PressurePlateBlock> MYTHRIL_PRESSURE_PLATE = registerBlock("mythril_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<ButtonBlock> MYTHRIL_BUTTON = registerBlock("mythril_button",
+            () -> new ButtonBlock(BlockSetType.IRON,1, BlockBehaviour.Properties.of().strength(3f)
+                    .requiresCorrectToolForDrops().noCollission()));
+
+    public static final RegistryObject<FenceBlock> MYTHRIL_FENCE = registerBlock("mythril_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<FenceGateBlock> MYTHRIL_FENCE_GATE = registerBlock("mythril_fence_gate",
+            () -> new FenceGateBlock(WoodType.ACACIA, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<WallBlock> MYTHRIL_WALL = registerBlock("mythril_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

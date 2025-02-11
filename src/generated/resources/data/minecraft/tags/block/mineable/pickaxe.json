@@ -3,6 +3,13 @@
     "moretoexplore:mythril_block",
     "moretoexplore:raw_mythril_block",
     "moretoexplore:mythril_ore",
-    "moretoexplore:deepslate_mythril_ore"
+    "moretoexplore:deepslate_mythril_ore",
+    "moretoexplore:mythril_stairs",
+    "moretoexplore:mythril_slab",
+    "moretoexplore:mythril_pressure_plate",
+    "moretoexplore:mythril_button",
+    "moretoexplore:mythril_fence",
+    "moretoexplore:mythril_fence_gate",
+    "moretoexplore:mythril_wall"
   ]
 }

@@ -31,6 +31,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.MYTHRIL_BLOCK.get());
         dropSelf(ModBlocks.RAW_MYTHRIL_BLOCK.get());
 
+        dropSelf(ModBlocks.MYTHRIL_STAIRS.get());
+        dropSelf(ModBlocks.MYTHRIL_SLAB.get());
+        dropSelf(ModBlocks.MYTHRIL_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.MYTHRIL_BUTTON.get());
+        dropSelf(ModBlocks.MYTHRIL_FENCE.get());
+        dropSelf(ModBlocks.MYTHRIL_FENCE_GATE.get());
+        dropSelf(ModBlocks.MYTHRIL_WALL.get());
+
         this.add(ModBlocks.MYTHRIL_ORE.get(),
                 block -> createOreDrop(ModBlocks.MYTHRIL_ORE.get(), ModItems.RAW_MYTHRIL.get()));
 

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "moretoexplore:block/mythril_block"
+  }
+}

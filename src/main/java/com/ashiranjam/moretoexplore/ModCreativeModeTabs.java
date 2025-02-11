@@ -31,6 +31,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MYTHRIL_AXE.get());
                         output.accept(ModItems.MYTHRIL_HOE.get());
 
+                        output.accept(ModItems.MYTHRIL_HELMET.get());
+                        output.accept(ModItems.MYTHRIL_CHESTPLATE.get());
+                        output.accept(ModItems.MYTHRIL_LEGGINGS.get());
+                        output.accept(ModItems.MYTHRIL_BOOTS.get());
+
+                        output.accept(ModBlocks.MYTHRIL_STAIRS.get());
+                        output.accept(ModBlocks.MYTHRIL_SLAB.get());
+
+                        output.accept(ModBlocks.MYTHRIL_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.MYTHRIL_BUTTON.get());
+
+                        output.accept(ModBlocks.MYTHRIL_FENCE.get());
+                        output.accept(ModBlocks.MYTHRIL_FENCE_GATE.get());
+                        output.accept(ModBlocks.MYTHRIL_WALL.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

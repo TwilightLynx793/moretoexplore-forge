@@ -27,6 +27,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> MYTHRIL_TOOLS = List.of(ModItems.MYTHRIL_PICKAXE.get(), ModItems.MYTHRIL_AXE.get(),
                 ModItems.MYTHRIL_SWORD.get(), ModItems.MYTHRIL_SHOVEL.get(),ModItems.MYTHRIL_HOE.get());
 
+        List<ItemLike> MYTHRIL_ARMOR_ITEMS = List.of(ModItems.MYTHRIL_HELMET.get(), ModItems.MYTHRIL_CHESTPLATE.get(),
+                ModItems.MYTHRIL_LEGGINGS.get(), ModItems.MYTHRIL_BOOTS.get());
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MYTHRIL_BLOCK.get())
                 .pattern("MMM")
                 .pattern("MMM")
@@ -53,6 +56,48 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, MYTHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.MYTHRIL_INGOT.get(), 0.25f, 200, "mythril");
         oreBlasting(pRecipeOutput, MYTHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.MYTHRIL_INGOT.get(), 0.25f, 100, "mythril");
+
+        stairBuilder(ModBlocks.MYTHRIL_STAIRS.get(), Ingredient.of(ModItems.MYTHRIL_INGOT.get())).group("mythril")
+                .unlockedBy(getHasName(ModItems.MYTHRIL_INGOT.get()), has(ModItems.MYTHRIL_INGOT.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYTHRIL_SLAB.get(), ModItems.MYTHRIL_INGOT.get());
+
+        buttonBuilder(ModBlocks.MYTHRIL_BUTTON.get(), Ingredient.of(ModItems.MYTHRIL_INGOT.get())).group("mythril")
+                .unlockedBy(getHasName(ModItems.MYTHRIL_INGOT.get()), has(ModItems.MYTHRIL_INGOT.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.MYTHRIL_PRESSURE_PLATE.get(), ModItems.MYTHRIL_INGOT.get());
+
+        fenceBuilder(ModBlocks.MYTHRIL_FENCE.get(), Ingredient.of(ModItems.MYTHRIL_INGOT.get())).group("mythril")
+                .unlockedBy(getHasName(ModItems.MYTHRIL_INGOT.get()), has(ModItems.MYTHRIL_INGOT.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.MYTHRIL_FENCE_GATE.get(), Ingredient.of(ModItems.MYTHRIL_INGOT.get())).group("mythril")
+                .unlockedBy(getHasName(ModItems.MYTHRIL_INGOT.get()), has(ModItems.MYTHRIL_INGOT.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYTHRIL_WALL.get(), ModItems.MYTHRIL_INGOT.get());
+    }
+
+    protected static void ArmorRecipeBuilder(List<ItemLike> result, ItemLike craftingItem, RecipeOutput output){
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result.get(0), 1)
+                .pattern("MMM")
+                .pattern("M M")
+                .define('M', craftingItem)
+                .unlockedBy(getHasName(craftingItem), has(craftingItem)).save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result.get(1), 1)
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', craftingItem)
+                .unlockedBy(getHasName(craftingItem), has(craftingItem)).save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result.get(2), 1)
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .define('M', craftingItem)
+                .unlockedBy(getHasName(craftingItem), has(craftingItem)).save(output);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, result.get(3), 1)
+                .pattern("M M")
+                .pattern("M M")
+                .define('M', craftingItem)
+                .unlockedBy(getHasName(craftingItem), has(craftingItem)).save(output);
 
     }
 

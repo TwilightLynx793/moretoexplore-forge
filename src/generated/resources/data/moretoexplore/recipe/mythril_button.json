@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "mythril",
+  "ingredients": [
+    {
+      "item": "moretoexplore:mythril_ingot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "moretoexplore:mythril_button"
+  }
+}

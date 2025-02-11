@@ -1,3 +1,8 @@
-// 1.21.1	2025-02-11T13:02:46.1697627	Tags for minecraft:block mod id moretoexplore
-613e5b2421662db603df13f38a8403814388379e data/minecraft/tags/block/mineable/pickaxe.json
-613e5b2421662db603df13f38a8403814388379e data/minecraft/tags/block/needs_iron_tool.json
+// 1.21.1	2025-02-11T19:01:31.7484539	Tags for minecraft:block mod id moretoexplore
+a89e7d64898fca35cefd8e21f0fd07105857add1 data/minecraft/tags/block/fences.json
+cc74459ce0f57385a4a7e6d550b698e1098a5723 data/minecraft/tags/block/fence_gates.json
+9aab161d66e34d7682f83bd4d98b6565d790557f data/minecraft/tags/block/incorrect_for_iron_tool.json
+d619d667dcb13159198ff95343a2b1bd37829dec data/minecraft/tags/block/mineable/pickaxe.json
+617837408cdd9e364b7a9626e480c0a9c4cea7dd data/minecraft/tags/block/needs_iron_tool.json
+d697e7d7ded6606339c274f6d54174fff4d0a477 data/minecraft/tags/block/walls.json
+9aab161d66e34d7682f83bd4d98b6565d790557f data/moretoexplore/tags/block/needs_mythril_tool.json
