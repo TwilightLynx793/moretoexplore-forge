@@ -38,5 +38,7 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
 
         generator.addProvider(event.includeClient(), (DataProvider.Factory<ModLanguageProvider>) (pOutput) -> new ModLanguageProvider(packOutput, MoreToExplore.MOD_ID, "en_us"));
+
+        generator.addProvider(event.includeServer(), new ModDatapackEntries(packOutput, lookupProvider));
     }
 }
