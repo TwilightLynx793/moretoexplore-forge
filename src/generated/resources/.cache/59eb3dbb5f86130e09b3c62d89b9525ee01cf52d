@@ -1,4 +1,7 @@
-// 1.21.1	2025-02-11T18:48:24.1039672	Loot Tables
+// 1.21.1	2025-02-13T05:15:38.5917168	Loot Tables
+e77f6e2d83da541427d17b5a6805b263c77b2c41 data/moretoexplore/loot_table/blocks/black_opal_block.json
+d68ac072d7a4e6467aaf78890fef926926e9e20e data/moretoexplore/loot_table/blocks/black_opal_ore.json
+560d1c84c0a8d9258b268a0f247e6779e1cbd95f data/moretoexplore/loot_table/blocks/deepslate_black_opal_ore.json
 b68442b3818ccb7417808178f425842f6c8ccba0 data/moretoexplore/loot_table/blocks/deepslate_mythril_ore.json
 82e7bd60b26d3d60df04a8ce27335efeba3be0c4 data/moretoexplore/loot_table/blocks/mythril_block.json
 2a36c6f67b3e726996e91825129ff1e775dbbe28 data/moretoexplore/loot_table/blocks/mythril_button.json
@@ -9,4 +12,5 @@ fb93561543e6014222e1422182cade82b8aa9a96 data/moretoexplore/loot_table/blocks/my
 fc4353c3f16182f80a4e87799ad6a06ba887c2be data/moretoexplore/loot_table/blocks/mythril_slab.json
 7e1c58ca65bc9d1ae277d932ccd3e487d2ffc1c4 data/moretoexplore/loot_table/blocks/mythril_stairs.json
 f9171719fc3bb44a2b1552f3b727dcd9a16fad9d data/moretoexplore/loot_table/blocks/mythril_wall.json
+926c41589a1bef32beade6ebbbaf886dc7186b14 data/moretoexplore/loot_table/blocks/raw_black_opal_block.json
 5aaaa912e9f58a80add0d190d6c296e95fd7b047 data/moretoexplore/loot_table/blocks/raw_mythril_block.json

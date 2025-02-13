@@ -27,6 +27,15 @@ public class ModLanguageProvider extends LanguageProvider {
         addItem(ModItems.MYTHRIL_LEGGINGS, "Mythril Leggings");
         addItem(ModItems.MYTHRIL_BOOTS, "Mythril Boots");
 
+        addItem(ModItems.BLACK_OPAL, "Black Opal");
+        addItem(ModItems.RAW_BLACK_OPAL, "Raw Black Opal");
+
+        addItem(ModItems.BLACK_OPAL_PICKAXE, "Black Opal Pickaxe");
+        addItem(ModItems.BLACK_OPAL_AXE, "Black Opal Axe");
+        addItem(ModItems.BLACK_OPAL_SWORD, "Black Opal Sword");
+        addItem(ModItems.BLACK_OPAL_SHOVEL, "Black Opal Shovel");
+        addItem(ModItems.BLACK_OPAL_HOE, "Black Opal Hoe");
+
         addBlock(ModBlocks.MYTHRIL_BLOCK, "Mythril Block");
         addBlock(ModBlocks.RAW_MYTHRIL_BLOCK, "Raw Mythril Block");
         addBlock(ModBlocks.MYTHRIL_ORE, "Mythril Ore");
@@ -39,5 +48,10 @@ public class ModLanguageProvider extends LanguageProvider {
         addBlock(ModBlocks.MYTHRIL_FENCE, "Mythril Fence");
         addBlock(ModBlocks.MYTHRIL_FENCE_GATE, "Mythril Fence Gate");
         addBlock(ModBlocks.MYTHRIL_WALL, "Mythril Wall");
+
+        addBlock(ModBlocks.BLACK_OPAL_BLOCK, "Black Opal Block");
+        addBlock(ModBlocks.RAW_BLACK_OPAL_BLOCK, "Raw Black Opal Block");
+        addBlock(ModBlocks.BLACK_OPAL_ORE, "Black Opal Ore");
+        addBlock(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE, "Deepslate Black Opal Ore");
     }
 }

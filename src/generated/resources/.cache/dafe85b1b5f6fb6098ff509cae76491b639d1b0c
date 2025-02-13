@@ -1,4 +1,10 @@
-// 1.21.1	2025-02-11T18:48:24.098968	Item Models: moretoexplore
+// 1.21.1	2025-02-13T21:43:19.8362221	Item Models: moretoexplore
+21a235c6bb63639979c4bd530123124f917e0c90 assets/moretoexplore/models/item/black_opal.json
+c0d5043eb7ab45ee9b9bde2f59eae2273e336616 assets/moretoexplore/models/item/black_opal_axe.json
+41c36699970f87a3f3023bfc30c9ae9977cfcd4c assets/moretoexplore/models/item/black_opal_hoe.json
+0221fb5a2e8700d1dcd0d868f0c428580abceba4 assets/moretoexplore/models/item/black_opal_pickaxe.json
+e5a3dd3dbf6eef35592ce59d814739720a00c500 assets/moretoexplore/models/item/black_opal_shovel.json
+062295d4c087a30650e158ad307efb07a636b703 assets/moretoexplore/models/item/black_opal_sword.json
 26017799a5b8f58263481700728670e593b0bd1b assets/moretoexplore/models/item/mythril_axe.json
 911d997988339594376cb68fb42ac56cad0d2104 assets/moretoexplore/models/item/mythril_boots.json
 89e6141737fef3f01d5207e83d249885dfe44fc5 assets/moretoexplore/models/item/mythril_boots_amethyst_trim.json
@@ -52,4 +58,5 @@ aca4ed3b9993c7e8b0e618c650e0b60b463d9949 assets/moretoexplore/models/item/mythri
 4372712691f474a29d6acfdad72e1af872da1dfd assets/moretoexplore/models/item/mythril_shovel.json
 51c974b16bf8c13e3430dd788a7ba172d075bc96 assets/moretoexplore/models/item/mythril_sword.json
 e7986ee1d0bd64104cf9c287b3cddd94293ea0d2 assets/moretoexplore/models/item/mythril_wall.json
+d43a98a9d737eb326141bff5c7ec1691521c5428 assets/moretoexplore/models/item/raw_black_opal.json
 16debc1c83fb12c86a7a917a4bb58f3b9355335d assets/moretoexplore/models/item/raw_mythril.json

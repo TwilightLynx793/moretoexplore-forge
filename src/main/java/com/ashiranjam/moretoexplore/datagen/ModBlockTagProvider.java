@@ -6,6 +6,7 @@ import com.ashiranjam.moretoexplore.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -30,13 +31,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.MYTHRIL_BUTTON.get())
                 .add(ModBlocks.MYTHRIL_FENCE.get())
                 .add(ModBlocks.MYTHRIL_FENCE_GATE.get())
-                .add(ModBlocks.MYTHRIL_WALL.get());
+                .add(ModBlocks.MYTHRIL_WALL.get())
+                .add(ModBlocks.BLACK_OPAL_BLOCK.get())
+                .add(ModBlocks.RAW_BLACK_OPAL_BLOCK.get())
+                .add(ModBlocks.BLACK_OPAL_ORE.get())
+                .add(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MYTHRIL_ORE.get())
-                .add(ModBlocks.DEEPSLATE_MYTHRIL_ORE.get());
-
-        tag(ModTags.Blocks.NEEDS_MYTHRIL_TOOL)
+                .add(ModBlocks.DEEPSLATE_MYTHRIL_ORE.get())
+                .add(ModBlocks.BLACK_OPAL_ORE.get())
+                .add(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get())
                 .add(ModBlocks.MYTHRIL_BLOCK.get())
                 .add(ModBlocks.RAW_MYTHRIL_BLOCK.get())
                 .add(ModBlocks.MYTHRIL_STAIRS.get())
@@ -45,18 +50,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.MYTHRIL_BUTTON.get())
                 .add(ModBlocks.MYTHRIL_FENCE.get())
                 .add(ModBlocks.MYTHRIL_FENCE_GATE.get())
-                .add(ModBlocks.MYTHRIL_WALL.get());
-
-        tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
-                .add(ModBlocks.MYTHRIL_BLOCK.get())
-                .add(ModBlocks.RAW_MYTHRIL_BLOCK.get())
-                .add(ModBlocks.MYTHRIL_STAIRS.get())
-                .add(ModBlocks.MYTHRIL_SLAB.get())
-                .add(ModBlocks.MYTHRIL_PRESSURE_PLATE.get())
-                .add(ModBlocks.MYTHRIL_BUTTON.get())
-                .add(ModBlocks.MYTHRIL_FENCE.get())
-                .add(ModBlocks.MYTHRIL_FENCE_GATE.get())
-                .add(ModBlocks.MYTHRIL_WALL.get());
+                .add(ModBlocks.MYTHRIL_WALL.get())
+                .add(ModBlocks.BLACK_OPAL_BLOCK.get())
+                .add(ModBlocks.RAW_BLACK_OPAL_BLOCK.get());
 
         tag(BlockTags.FENCES).add(ModBlocks.MYTHRIL_FENCE.get());
         tag(BlockTags.FENCE_GATES).add(ModBlocks.MYTHRIL_FENCE_GATE.get());

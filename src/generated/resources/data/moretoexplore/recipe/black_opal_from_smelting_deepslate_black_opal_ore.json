@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "black_opal",
+  "ingredient": {
+    "item": "moretoexplore:deepslate_black_opal_ore"
+  },
+  "result": {
+    "id": "moretoexplore:black_opal"
+  }
+}

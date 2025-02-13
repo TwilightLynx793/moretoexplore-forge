@@ -57,6 +57,23 @@ public class ModBlocks {
 
 
 
+    public static final RegistryObject<Block> BLACK_OPAL_BLOCK = registerBlock("black_opal_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final RegistryObject<Block> RAW_BLACK_OPAL_BLOCK = registerBlock("raw_black_opal_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+
+    public static final RegistryObject<Block> BLACK_OPAL_ORE = registerBlock("black_opal_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> DEEPSLATE_BLACK_OPAL_ORE = registerBlock("deepslate_black_opal_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

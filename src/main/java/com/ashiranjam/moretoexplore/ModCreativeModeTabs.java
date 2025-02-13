@@ -46,6 +46,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.MYTHRIL_FENCE_GATE.get());
                         output.accept(ModBlocks.MYTHRIL_WALL.get());
 
+                        output.accept(ModItems.BLACK_OPAL.get());
+                        output.accept(ModItems.RAW_BLACK_OPAL.get());
+                        output.accept(ModBlocks.BLACK_OPAL_BLOCK.get());
+                        output.accept(ModBlocks.RAW_BLACK_OPAL_BLOCK.get());
+                        output.accept(ModBlocks.BLACK_OPAL_ORE.get());
+                        output.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get());
+
+                        output.accept(ModItems.BLACK_OPAL_PICKAXE.get());
+                        output.accept(ModItems.BLACK_OPAL_AXE.get());
+                        output.accept(ModItems.BLACK_OPAL_SWORD.get());
+                        output.accept(ModItems.BLACK_OPAL_SHOVEL.get());
+                        output.accept(ModItems.BLACK_OPAL_HOE.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

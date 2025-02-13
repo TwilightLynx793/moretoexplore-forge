@@ -10,6 +10,10 @@
     "moretoexplore:mythril_button",
     "moretoexplore:mythril_fence",
     "moretoexplore:mythril_fence_gate",
-    "moretoexplore:mythril_wall"
+    "moretoexplore:mythril_wall",
+    "moretoexplore:black_opal_block",
+    "moretoexplore:raw_black_opal_block",
+    "moretoexplore:black_opal_ore",
+    "moretoexplore:deepslate_black_opal_ore"
   ]
 }

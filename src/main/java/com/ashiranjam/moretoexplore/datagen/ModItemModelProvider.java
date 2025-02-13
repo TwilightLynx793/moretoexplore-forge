@@ -46,11 +46,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.MYTHRIL_INGOT.get());
         basicItem(ModItems.RAW_MYTHRIL.get());
 
+        basicItem(ModItems.BLACK_OPAL.get());
+        basicItem(ModItems.RAW_BLACK_OPAL.get());
+
         handheldItem(ModItems.MYTHRIL_SWORD);
         handheldItem(ModItems.MYTHRIL_PICKAXE);
         handheldItem(ModItems.MYTHRIL_SHOVEL);
         handheldItem(ModItems.MYTHRIL_AXE);
         handheldItem(ModItems.MYTHRIL_HOE);
+
+        handheldItem(ModItems.BLACK_OPAL_SWORD);
+        handheldItem(ModItems.BLACK_OPAL_PICKAXE);
+        handheldItem(ModItems.BLACK_OPAL_SHOVEL);
+        handheldItem(ModItems.BLACK_OPAL_AXE);
+        handheldItem(ModItems.BLACK_OPAL_HOE);
 
         trimmedArmorItem(ModItems.MYTHRIL_HELMET);
         trimmedArmorItem(ModItems.MYTHRIL_CHESTPLATE);

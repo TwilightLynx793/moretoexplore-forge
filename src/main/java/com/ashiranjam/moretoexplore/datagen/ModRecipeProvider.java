@@ -30,6 +30,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> MYTHRIL_ARMOR_ITEMS = List.of(ModItems.MYTHRIL_HELMET.get(), ModItems.MYTHRIL_CHESTPLATE.get(),
                 ModItems.MYTHRIL_LEGGINGS.get(), ModItems.MYTHRIL_BOOTS.get());
 
+        List<ItemLike> BLACK_OPAL_SMELATBLES = List.of(ModItems.RAW_BLACK_OPAL.get(), ModBlocks.BLACK_OPAL_ORE.get(),
+                ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get());
+
+        List<ItemLike> BLACK_OPAL_TOOLS = List.of(ModItems.BLACK_OPAL_PICKAXE.get(), ModItems.BLACK_OPAL_AXE.get(),
+                ModItems.BLACK_OPAL_SWORD.get(), ModItems.BLACK_OPAL_SHOVEL.get(), ModItems.BLACK_OPAL_HOE.get());
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MYTHRIL_BLOCK.get())
                 .pattern("MMM")
                 .pattern("MMM")
@@ -53,6 +59,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.RAW_MYTHRIL_BLOCK.get()), has(ModBlocks.RAW_MYTHRIL_BLOCK.get())).save(pRecipeOutput);
 
         ToolRecipeBuilder(MYTHRIL_TOOLS, ModItems.MYTHRIL_INGOT.get(), pRecipeOutput);
+        ArmorRecipeBuilder(MYTHRIL_ARMOR_ITEMS, ModItems.MYTHRIL_INGOT.get(), pRecipeOutput);
 
         oreSmelting(pRecipeOutput, MYTHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.MYTHRIL_INGOT.get(), 0.25f, 200, "mythril");
         oreBlasting(pRecipeOutput, MYTHRIL_SMELTABLES, RecipeCategory.MISC, ModItems.MYTHRIL_INGOT.get(), 0.25f, 100, "mythril");
@@ -70,6 +77,35 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         fenceGateBuilder(ModBlocks.MYTHRIL_FENCE_GATE.get(), Ingredient.of(ModItems.MYTHRIL_INGOT.get())).group("mythril")
                 .unlockedBy(getHasName(ModItems.MYTHRIL_INGOT.get()), has(ModItems.MYTHRIL_INGOT.get())).save(pRecipeOutput);
         wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MYTHRIL_WALL.get(), ModItems.MYTHRIL_INGOT.get());
+
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BLACK_OPAL_BLOCK.get())
+                .pattern("MMM")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.BLACK_OPAL.get())
+                .unlockedBy(getHasName(ModItems.BLACK_OPAL.get()), has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 9)
+                .requires(ModBlocks.BLACK_OPAL_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.BLACK_OPAL_BLOCK.get()), has(ModBlocks.BLACK_OPAL_BLOCK.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_BLACK_OPAL_BLOCK.get())
+                .pattern("MMM")
+                .pattern("MMM")
+                .pattern("MMM")
+                .define('M', ModItems.RAW_BLACK_OPAL.get())
+                .unlockedBy(getHasName(ModItems.RAW_BLACK_OPAL.get()), has(ModItems.RAW_BLACK_OPAL.get())).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_BLACK_OPAL.get(), 9)
+                .requires(ModBlocks.RAW_BLACK_OPAL_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.RAW_BLACK_OPAL_BLOCK.get()), has(ModBlocks.RAW_MYTHRIL_BLOCK.get())).save(pRecipeOutput);
+
+        oreSmelting(pRecipeOutput, BLACK_OPAL_SMELATBLES, RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 0.25f, 200, "black_opal");
+        oreBlasting(pRecipeOutput, BLACK_OPAL_SMELATBLES, RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 0.25f, 100, "black_opal");
+
+        ToolRecipeBuilder(BLACK_OPAL_TOOLS, ModItems.BLACK_OPAL.get(), pRecipeOutput);
     }
 
     protected static void ArmorRecipeBuilder(List<ItemLike> result, ItemLike craftingItem, RecipeOutput output){
