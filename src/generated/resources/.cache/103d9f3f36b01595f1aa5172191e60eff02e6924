@@ -1,4 +1,7 @@
-// 1.21.1	2025-02-13T05:15:38.597716	Registries
+// 1.21.1	2025-02-14T21:57:17.4817322	Registries
+11dfae6ca679ef798dcd380c49f56b6dcd0fec25 data/moretoexplore/forge/biome_modifier/add_black_opal_ore.json
 695f632796921ac15598240d8557f53ab717e7ac data/moretoexplore/forge/biome_modifier/add_mythril_ore.json
+d21af759bcdaf17fd43e7e5a46c611a666f5d78f data/moretoexplore/worldgen/configured_feature/black_opal_ore.json
 ee5cce1673f9157e5aeb7518dd29907dbbced80f data/moretoexplore/worldgen/configured_feature/mythril_ore.json
+1e21ec7fba4fa3200e0e4b256e91680372576b6d data/moretoexplore/worldgen/placed_feature/black_opal_ore_placed.json
 59fa13920db69eb71707271db67ce3eb55b352da data/moretoexplore/worldgen/placed_feature/mythril_ore_placed.json
