@@ -11,6 +11,6 @@ public class ModToolTiers {
             ModTags.Blocks.INCORRECT_FOR_MYTHRIL_TOOL);
 
     public static final Tier BLACK_OPAL = new ForgeTier(1200, 8.5f, 3.0f, 13,
-            ModTags.Blocks.NEEDS_MYTHRIL_TOOL, () -> Ingredient.of(ModItems.MYTHRIL_INGOT.get()),
-            ModTags.Blocks.INCORRECT_FOR_MYTHRIL_TOOL);
+            ModTags.Blocks.NEEDS_BLACK_OPAL_TOOL, () -> Ingredient.of(ModItems.BLACK_OPAL.get()),
+            ModTags.Blocks.INCORRECT_FOR_BLACK_OPAL_TOOL);
 }

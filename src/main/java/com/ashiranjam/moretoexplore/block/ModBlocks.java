@@ -45,7 +45,7 @@ public class ModBlocks {
     public static final RegistryObject<PressurePlateBlock> MYTHRIL_PRESSURE_PLATE = registerBlock("mythril_pressure_plate",
             () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
     public static final RegistryObject<ButtonBlock> MYTHRIL_BUTTON = registerBlock("mythril_button",
-            () -> new ButtonBlock(BlockSetType.IRON,1, BlockBehaviour.Properties.of().strength(3f)
+            () -> new ButtonBlock(BlockSetType.IRON,20, BlockBehaviour.Properties.of().strength(0.5f)
                     .requiresCorrectToolForDrops().noCollission()));
 
     public static final RegistryObject<FenceBlock> MYTHRIL_FENCE = registerBlock("mythril_fence",
@@ -71,6 +71,30 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_BLACK_OPAL_ORE = registerBlock("deepslate_black_opal_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final RegistryObject<StairBlock> BLACK_OPAL_STAIRS = registerBlock("black_opal_stairs",
+            () -> new StairBlock(ModBlocks.BLACK_OPAL_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<SlabBlock> BLACK_OPAL_SLAB = registerBlock("black_opal_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<PressurePlateBlock> BLACK_OPAL_PRESSURE_PLATE = registerBlock("black_opal_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<ButtonBlock> BLACK_OPAL_BUTTON = registerBlock("black_opal_button",
+            () -> new ButtonBlock(BlockSetType.IRON,20, BlockBehaviour.Properties.of().strength(0.5f)
+                    .requiresCorrectToolForDrops().noCollission()));
+
+    public static final RegistryObject<FenceBlock> BLACK_OPAL_FENCE = registerBlock("black_opal_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<FenceGateBlock> BLACK_OPAL_FENCE_GATE = registerBlock("black_opal_fence_gate",
+            () -> new FenceGateBlock(WoodType.ACACIA, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<WallBlock> BLACK_OPAL_WALL = registerBlock("black_opal_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<DoorBlock> BLACK_OPAL_DOOR = registerBlock("black_opal_door",
+            () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
+    public static final RegistryObject<TrapDoorBlock> BLACK_OPAL_TRAPDOOR = registerBlock("black_opal_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
 
 
 

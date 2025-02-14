@@ -27,6 +27,15 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 6);
             }), 11, 0f, 0f, () -> ModItems.MYTHRIL_INGOT.get());
 
+    public static final Holder<ArmorMaterial> BLACK_OPAL_ARMOR_MATERIAL = register("black_opal", Util.make(new EnumMap<>(ArmorItem.Type.class),
+            attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 4);
+                attribute.put(ArmorItem.Type.LEGGINGS, 7);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 10);
+                attribute.put(ArmorItem.Type.HELMET, 5);
+                attribute.put(ArmorItem.Type.BODY, 7);
+            }), 11, 0f, 0f, () -> ModItems.MYTHRIL_INGOT.get());
+
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,
                                                   Supplier<Item> ingredientItem) {

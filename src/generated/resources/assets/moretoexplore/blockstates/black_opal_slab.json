@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "moretoexplore:block/black_opal_slab"
+    },
+    "type=double": {
+      "model": "moretoexplore:block/black_opal_block"
+    },
+    "type=top": {
+      "model": "moretoexplore:block/black_opal_slab_top"
+    }
+  }
+}

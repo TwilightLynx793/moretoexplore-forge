@@ -36,6 +36,11 @@ public class ModLanguageProvider extends LanguageProvider {
         addItem(ModItems.BLACK_OPAL_SHOVEL, "Black Opal Shovel");
         addItem(ModItems.BLACK_OPAL_HOE, "Black Opal Hoe");
 
+        addItem(ModItems.BLACK_OPAL_HELMET, "Black Opal Helmet");
+        addItem(ModItems.BLACK_OPAL_CHESTPLATE, "Black Opal Chestplate");
+        addItem(ModItems.BLACK_OPAL_LEGGINGS, "Black Opal Leggings");
+        addItem(ModItems.BLACK_OPAL_BOOTS, "Black Opal Boots");
+
         addBlock(ModBlocks.MYTHRIL_BLOCK, "Mythril Block");
         addBlock(ModBlocks.RAW_MYTHRIL_BLOCK, "Raw Mythril Block");
         addBlock(ModBlocks.MYTHRIL_ORE, "Mythril Ore");
@@ -53,5 +58,15 @@ public class ModLanguageProvider extends LanguageProvider {
         addBlock(ModBlocks.RAW_BLACK_OPAL_BLOCK, "Raw Black Opal Block");
         addBlock(ModBlocks.BLACK_OPAL_ORE, "Black Opal Ore");
         addBlock(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE, "Deepslate Black Opal Ore");
+
+        addBlock(ModBlocks.BLACK_OPAL_STAIRS, "Black Opal Stairs");
+        addBlock(ModBlocks.BLACK_OPAL_SLAB, "Black Opal Slab");
+        addBlock(ModBlocks.BLACK_OPAL_PRESSURE_PLATE, "Black Opal Pressure Plate");
+        addBlock(ModBlocks.BLACK_OPAL_BUTTON, "Black Opal Button");
+        addBlock(ModBlocks.BLACK_OPAL_FENCE, "Black Opal Fence");
+        addBlock(ModBlocks.BLACK_OPAL_FENCE_GATE, "Black Opal Fence Gate");
+        addBlock(ModBlocks.BLACK_OPAL_WALL, "Black Opal Wall");
+        addBlock(ModBlocks.BLACK_OPAL_DOOR, "Black Opal Door");
+        addBlock(ModBlocks.BLACK_OPAL_TRAPDOOR, "Black Opal Trapdoor");
     }
 }

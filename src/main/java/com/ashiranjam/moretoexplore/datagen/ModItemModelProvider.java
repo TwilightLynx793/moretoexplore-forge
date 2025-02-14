@@ -66,9 +66,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.MYTHRIL_LEGGINGS);
         trimmedArmorItem(ModItems.MYTHRIL_BOOTS);
 
+        trimmedArmorItem(ModItems.BLACK_OPAL_HELMET);
+        trimmedArmorItem(ModItems.BLACK_OPAL_CHESTPLATE);
+        trimmedArmorItem(ModItems.BLACK_OPAL_LEGGINGS);
+        trimmedArmorItem(ModItems.BLACK_OPAL_BOOTS);
+
         buttonItem(ModBlocks.MYTHRIL_BUTTON, ModBlocks.MYTHRIL_BLOCK);
         fenceItem(ModBlocks.MYTHRIL_FENCE, ModBlocks.MYTHRIL_BLOCK);
         wallItem(ModBlocks.MYTHRIL_WALL, ModBlocks.MYTHRIL_BLOCK);
+
+        buttonItem(ModBlocks.BLACK_OPAL_BUTTON, ModBlocks.BLACK_OPAL_BLOCK);
+        fenceItem(ModBlocks.BLACK_OPAL_FENCE, ModBlocks.BLACK_OPAL_BLOCK);
+        wallItem(ModBlocks.BLACK_OPAL_WALL, ModBlocks.BLACK_OPAL_BLOCK);
+
+        simpleBlockItem(ModBlocks.BLACK_OPAL_DOOR);
 
     }
 

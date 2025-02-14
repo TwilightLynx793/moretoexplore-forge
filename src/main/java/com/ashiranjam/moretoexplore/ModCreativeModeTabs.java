@@ -59,6 +59,24 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BLACK_OPAL_SHOVEL.get());
                         output.accept(ModItems.BLACK_OPAL_HOE.get());
 
+                        output.accept(ModItems.BLACK_OPAL_HELMET.get());
+                        output.accept(ModItems.BLACK_OPAL_CHESTPLATE.get());
+                        output.accept(ModItems.BLACK_OPAL_LEGGINGS.get());
+                        output.accept(ModItems.BLACK_OPAL_BOOTS.get());
+
+                        output.accept(ModBlocks.BLACK_OPAL_STAIRS.get());
+                        output.accept(ModBlocks.BLACK_OPAL_SLAB.get());
+
+                        output.accept(ModBlocks.BLACK_OPAL_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.BLACK_OPAL_BUTTON.get());
+
+                        output.accept(ModBlocks.BLACK_OPAL_FENCE.get());
+                        output.accept(ModBlocks.BLACK_OPAL_FENCE_GATE.get());
+                        output.accept(ModBlocks.BLACK_OPAL_WALL.get());
+
+                        output.accept(ModBlocks.BLACK_OPAL_DOOR.get());
+                        output.accept(ModBlocks.BLACK_OPAL_TRAPDOOR.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

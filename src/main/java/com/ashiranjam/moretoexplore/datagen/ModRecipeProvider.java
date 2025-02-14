@@ -36,6 +36,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> BLACK_OPAL_TOOLS = List.of(ModItems.BLACK_OPAL_PICKAXE.get(), ModItems.BLACK_OPAL_AXE.get(),
                 ModItems.BLACK_OPAL_SWORD.get(), ModItems.BLACK_OPAL_SHOVEL.get(), ModItems.BLACK_OPAL_HOE.get());
 
+        List<ItemLike> BLACK_OPAL_ARMOR_ITEMS = List.of(ModItems.BLACK_OPAL_HELMET.get(), ModItems.BLACK_OPAL_CHESTPLATE.get(),
+                ModItems.BLACK_OPAL_LEGGINGS.get(), ModItems.BLACK_OPAL_BOOTS.get());
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MYTHRIL_BLOCK.get())
                 .pattern("MMM")
                 .pattern("MMM")
@@ -106,6 +109,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(pRecipeOutput, BLACK_OPAL_SMELATBLES, RecipeCategory.MISC, ModItems.BLACK_OPAL.get(), 0.25f, 100, "black_opal");
 
         ToolRecipeBuilder(BLACK_OPAL_TOOLS, ModItems.BLACK_OPAL.get(), pRecipeOutput);
+        ArmorRecipeBuilder(BLACK_OPAL_ARMOR_ITEMS, ModItems.BLACK_OPAL.get(), pRecipeOutput);
+
+        stairBuilder(ModBlocks.BLACK_OPAL_STAIRS.get(), Ingredient.of(ModItems.BLACK_OPAL.get())).group("black_opal")
+                .unlockedBy(getHasName(ModItems.BLACK_OPAL.get()), has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_OPAL_SLAB.get(), ModItems.BLACK_OPAL.get());
+
+        buttonBuilder(ModBlocks.BLACK_OPAL_BUTTON.get(), Ingredient.of(ModItems.BLACK_OPAL.get())).group("black_opal")
+                .unlockedBy(getHasName(ModItems.BLACK_OPAL.get()), has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.BLACK_OPAL_PRESSURE_PLATE.get(), ModItems.BLACK_OPAL.get());
+
+        fenceBuilder(ModBlocks.BLACK_OPAL_FENCE.get(), Ingredient.of(ModItems.BLACK_OPAL.get())).group("black_opal")
+                .unlockedBy(getHasName(ModItems.BLACK_OPAL.get()), has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.BLACK_OPAL_FENCE_GATE.get(), Ingredient.of(ModItems.BLACK_OPAL.get())).group("black_opal")
+                .unlockedBy(getHasName(ModItems.BLACK_OPAL.get()), has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.BLACK_OPAL_WALL.get(), ModItems.BLACK_OPAL.get());
+
+        doorBuilder(ModBlocks.BLACK_OPAL_DOOR.get(), Ingredient.of(ModItems.BLACK_OPAL.get())).group("black_opal")
+                .unlockedBy(getHasName(ModItems.BLACK_OPAL.get()), has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.BLACK_OPAL_TRAPDOOR.get(), Ingredient.of(ModItems.BLACK_OPAL.get())).group("black_opal")
+                .unlockedBy(getHasName(ModItems.BLACK_OPAL.get()), has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
     }
 
     protected static void ArmorRecipeBuilder(List<ItemLike> result, ItemLike craftingItem, RecipeOutput output){

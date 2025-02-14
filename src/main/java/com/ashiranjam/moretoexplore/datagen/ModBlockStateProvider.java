@@ -37,10 +37,28 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock(ModBlocks.MYTHRIL_FENCE_GATE.get(), blockTexture(ModBlocks.MYTHRIL_BLOCK.get()));
         wallBlock(ModBlocks.MYTHRIL_WALL.get(), blockTexture(ModBlocks.MYTHRIL_BLOCK.get()));
 
+        stairsBlock(ModBlocks.BLACK_OPAL_STAIRS.get(), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+        slabBlock(ModBlocks.BLACK_OPAL_SLAB.get(), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+
+        buttonBlock(ModBlocks.BLACK_OPAL_BUTTON.get(), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+        pressurePlateBlock(ModBlocks.BLACK_OPAL_PRESSURE_PLATE.get(), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+
+        fenceBlock(ModBlocks.BLACK_OPAL_FENCE.get(), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+        fenceGateBlock(ModBlocks.BLACK_OPAL_FENCE_GATE.get(), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+        wallBlock(ModBlocks.BLACK_OPAL_WALL.get(), blockTexture(ModBlocks.BLACK_OPAL_BLOCK.get()));
+        doorBlockWithRenderType(ModBlocks.BLACK_OPAL_DOOR.get(), modLoc("block/black_opal_door_bottom"), modLoc("block/black_opal_door_top"), "cutout");
+        trapdoorBlockWithRenderType(ModBlocks.BLACK_OPAL_TRAPDOOR.get(), modLoc("block/black_opal_trapdoor"), true, "cutout");
+
         blockItem(ModBlocks.MYTHRIL_STAIRS);
         blockItem(ModBlocks.MYTHRIL_SLAB);
         blockItem(ModBlocks.MYTHRIL_PRESSURE_PLATE);
         blockItem(ModBlocks.MYTHRIL_FENCE_GATE);
+
+        blockItem(ModBlocks.BLACK_OPAL_STAIRS);
+        blockItem(ModBlocks.BLACK_OPAL_SLAB);
+        blockItem(ModBlocks.BLACK_OPAL_PRESSURE_PLATE);
+        blockItem(ModBlocks.BLACK_OPAL_FENCE_GATE);
+        blockItem(ModBlocks.BLACK_OPAL_TRAPDOOR, "_bottom");
     }
 
     private void blockItem(RegistryObject<? extends Block> blockRegistryObject) {

@@ -14,6 +14,15 @@
     "moretoexplore:black_opal_block",
     "moretoexplore:raw_black_opal_block",
     "moretoexplore:black_opal_ore",
-    "moretoexplore:deepslate_black_opal_ore"
+    "moretoexplore:deepslate_black_opal_ore",
+    "moretoexplore:black_opal_stairs",
+    "moretoexplore:black_opal_slab",
+    "moretoexplore:black_opal_pressure_plate",
+    "moretoexplore:black_opal_button",
+    "moretoexplore:black_opal_fence",
+    "moretoexplore:black_opal_fence_gate",
+    "moretoexplore:black_opal_wall",
+    "moretoexplore:black_opal_door",
+    "moretoexplore:black_opal_trapdoor"
   ]
 }

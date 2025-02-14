@@ -80,6 +80,22 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.BLACK_OPAL, new Item.Properties()
                     .attributes(HoeItem.createAttributes(ModToolTiers.MYTHRIL, -1, 0f))));
 
+    public static final RegistryObject<Item> BLACK_OPAL_HELMET = ITEMS.register("black_opal_helmet",
+            () -> new ArmorItem(ModArmorMaterials.BLACK_OPAL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(27))));
+
+    public static final RegistryObject<Item> BLACK_OPAL_CHESTPLATE = ITEMS.register("black_opal_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.BLACK_OPAL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(27))));
+
+    public static final RegistryObject<Item> BLACK_OPAL_LEGGINGS = ITEMS.register("black_opal_leggings",
+            () -> new ArmorItem(ModArmorMaterials.BLACK_OPAL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(27))));
+
+    public static final RegistryObject<Item> BLACK_OPAL_BOOTS = ITEMS.register("black_opal_boots",
+            () -> new ArmorItem(ModArmorMaterials.BLACK_OPAL_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(27))));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

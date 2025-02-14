@@ -41,6 +41,19 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.MYTHRIL_FENCE_GATE.get());
         dropSelf(ModBlocks.MYTHRIL_WALL.get());
 
+        dropSelf(ModBlocks.BLACK_OPAL_STAIRS.get());
+        dropSelf(ModBlocks.BLACK_OPAL_SLAB.get());
+        dropSelf(ModBlocks.BLACK_OPAL_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.BLACK_OPAL_BUTTON.get());
+        dropSelf(ModBlocks.BLACK_OPAL_FENCE.get());
+        dropSelf(ModBlocks.BLACK_OPAL_FENCE_GATE.get());
+        dropSelf(ModBlocks.BLACK_OPAL_WALL.get());
+        dropSelf(ModBlocks.BLACK_OPAL_TRAPDOOR.get());
+
+
+        this.add(ModBlocks.BLACK_OPAL_DOOR.get(),
+                block -> createDoorTable(ModBlocks.BLACK_OPAL_DOOR.get()));
+
         this.add(ModBlocks.MYTHRIL_ORE.get(),
                 block -> createOreDrop(ModBlocks.MYTHRIL_ORE.get(), ModItems.RAW_MYTHRIL.get()));
 
