@@ -3,7 +3,7 @@ package com.ashiranjam.moretoexplore.datagen;
 import com.ashiranjam.moretoexplore.MoreToExplore;
 import com.ashiranjam.moretoexplore.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.*;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -53,6 +53,20 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(ModBlocks.BLACK_OPAL_DOOR.get(), modLoc("block/black_opal_door_bottom"), modLoc("block/black_opal_door_top"), "cutout");
         trapdoorBlockWithRenderType(ModBlocks.BLACK_OPAL_TRAPDOOR.get(), modLoc("block/black_opal_trapdoor"), true, "cutout");
 
+        stairsBlock(((StairBlock) ModBlocks.AZURITE_STAIRS.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.AZURITE_SLAB.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
+
+        buttonBlock(((ButtonBlock) ModBlocks.AZURITE_BUTTON.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.AZURITE_PRESSURE_PLATE.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
+
+        fenceBlock(((FenceBlock) ModBlocks.AZURITE_FENCE.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.AZURITE_FENCE_GATE.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.AZURITE_WALL.get()), blockTexture(ModBlocks.AZURITE_BLOCK.get()));
+
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.AZURITE_DOOR.get()), modLoc("block/azurite_door_bottom"), modLoc("block/azurite_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.AZURITE_TRAPDOOR.get()), modLoc("block/azurite_trapdoor"), true, "cutout");
+
+
         blockItem(ModBlocks.MYTHRIL_STAIRS);
         blockItem(ModBlocks.MYTHRIL_SLAB);
         blockItem(ModBlocks.MYTHRIL_PRESSURE_PLATE);
@@ -63,6 +77,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.BLACK_OPAL_PRESSURE_PLATE);
         blockItem(ModBlocks.BLACK_OPAL_FENCE_GATE);
         blockItem(ModBlocks.BLACK_OPAL_TRAPDOOR, "_bottom");
+
+        blockItem(ModBlocks.AZURITE_STAIRS);
+        blockItem(ModBlocks.AZURITE_SLAB);
+        blockItem(ModBlocks.AZURITE_PRESSURE_PLATE);
+        blockItem(ModBlocks.AZURITE_FENCE_GATE);
+        blockItem(ModBlocks.AZURITE_TRAPDOOR, "_bottom");
     }
 
     private void blockItem(RegistryObject<? extends Block> blockRegistryObject) {

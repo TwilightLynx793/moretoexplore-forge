@@ -95,6 +95,19 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.AZURITE_LEGGINGS.get());
                         output.accept(ModItems.AZURITE_BOOTS.get());
 
+                        output.accept(ModBlocks.AZURITE_STAIRS.get());
+                        output.accept(ModBlocks.AZURITE_SLAB.get());
+
+                        output.accept(ModBlocks.AZURITE_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.AZURITE_BUTTON.get());
+
+                        output.accept(ModBlocks.AZURITE_FENCE.get());
+                        output.accept(ModBlocks.AZURITE_FENCE_GATE.get());
+                        output.accept(ModBlocks.AZURITE_WALL.get());
+
+                        output.accept(ModBlocks.AZURITE_DOOR.get());
+                        output.accept(ModBlocks.AZURITE_TRAPDOOR.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -155,6 +155,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ToolRecipeBuilder(AZURITE_TOOLS, ModItems.AZURITE.get(), pRecipeOutput);
         ArmorRecipeBuilder(AZURITE_ARMOR_ITEMS, ModItems.AZURITE.get(), pRecipeOutput);
+
+
+        stairBuilder(ModBlocks.AZURITE_STAIRS.get(), Ingredient.of(ModItems.AZURITE.get())).group("azurite")
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE.get())).save(pRecipeOutput);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AZURITE_SLAB.get(), ModItems.AZURITE.get());
+
+        buttonBuilder(ModBlocks.AZURITE_BUTTON.get(), Ingredient.of(ModItems.AZURITE.get())).group("azurite")
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE.get())).save(pRecipeOutput);
+        pressurePlate(pRecipeOutput, ModBlocks.AZURITE_PRESSURE_PLATE.get(), ModItems.AZURITE.get());
+
+        fenceBuilder(ModBlocks.AZURITE_FENCE.get(), Ingredient.of(ModItems.AZURITE.get())).group("azurite")
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE.get())).save(pRecipeOutput);
+        fenceGateBuilder(ModBlocks.AZURITE_FENCE_GATE.get(), Ingredient.of(ModItems.AZURITE.get())).group("azurite")
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE.get())).save(pRecipeOutput);
+        wall(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.AZURITE_WALL.get(), ModItems.AZURITE.get());
+
+        doorBuilder(ModBlocks.AZURITE_DOOR.get(), Ingredient.of(ModItems.AZURITE.get())).group("azurite")
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE.get())).save(pRecipeOutput);
+        trapdoorBuilder(ModBlocks.AZURITE_TRAPDOOR.get(), Ingredient.of(ModItems.AZURITE.get())).group("azurite")
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
     }
 
     protected static void ArmorRecipeBuilder(List<ItemLike> result, ItemLike craftingItem, RecipeOutput output){

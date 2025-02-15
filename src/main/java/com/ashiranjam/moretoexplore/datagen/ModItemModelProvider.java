@@ -95,6 +95,12 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleBlockItem(ModBlocks.BLACK_OPAL_DOOR);
 
+        buttonItem(ModBlocks.AZURITE_BUTTON, ModBlocks.AZURITE_BLOCK);
+        fenceItem(ModBlocks.AZURITE_FENCE, ModBlocks.AZURITE_BLOCK);
+        wallItem(ModBlocks.AZURITE_WALL, ModBlocks.AZURITE_BLOCK);
+
+        simpleBlockItem(ModBlocks.AZURITE_DOOR);
+
     }
 
     public void buttonItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {

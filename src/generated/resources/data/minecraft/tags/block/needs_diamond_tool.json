@@ -1,0 +1,14 @@
+{
+  "values": [
+    "moretoexplore:azurite_block",
+    "moretoexplore:azurite_stairs",
+    "moretoexplore:azurite_slab",
+    "moretoexplore:azurite_pressure_plate",
+    "moretoexplore:azurite_button",
+    "moretoexplore:azurite_fence",
+    "moretoexplore:azurite_fence_gate",
+    "moretoexplore:azurite_wall",
+    "moretoexplore:azurite_door",
+    "moretoexplore:azurite_trapdoor"
+  ]
+}

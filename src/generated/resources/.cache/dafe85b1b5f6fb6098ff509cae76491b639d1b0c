@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-15T14:26:04.5856938	Item Models: moretoexplore
+// 1.21.1	2025-02-15T18:45:20.7723572	Item Models: moretoexplore
 2ccea4734407c256c850db8a272f60d9b43474c0 assets/moretoexplore/models/item/azurite.json
 96e996ab613ea7f005c17c8686e0d0469175666a assets/moretoexplore/models/item/azurite_axe.json
 5e70a7802f57c35470a3bba4b1987731c082416a assets/moretoexplore/models/item/azurite_boots.json
@@ -12,6 +12,7 @@ a3dbd30582cc04706fec4d540a6e42976ec374a3 assets/moretoexplore/models/item/azurit
 fab390dcac0abdc063742109ee388d8ff3697d35 assets/moretoexplore/models/item/azurite_boots_netherite_trim.json
 f34c5371d4298483903aab8627843f9815061f6a assets/moretoexplore/models/item/azurite_boots_quartz_trim.json
 4d7ed66a360ff70da20727a059f12914cba34f6d assets/moretoexplore/models/item/azurite_boots_redstone_trim.json
+e2f6c629413e2c94b4646878a17ed62d9267fc84 assets/moretoexplore/models/item/azurite_button.json
 c1e7e49cec3524d8d767c5a4c34b843f4bbb54ca assets/moretoexplore/models/item/azurite_chestplate.json
 529fdd0339b1f403edf5a9c7972263320da22649 assets/moretoexplore/models/item/azurite_chestplate_amethyst_trim.json
 0ee5bd3dbd761fb05af068780b92c6880339e559 assets/moretoexplore/models/item/azurite_chestplate_copper_trim.json
@@ -23,6 +24,8 @@ c96fa7909df05c7c6606b69a5c72662dccb57170 assets/moretoexplore/models/item/azurit
 3b88d69cad747f8fdd4c7e7cd24e5ca35f2ea1c7 assets/moretoexplore/models/item/azurite_chestplate_netherite_trim.json
 63fb88070663cabdc23c9d3bbe48e62e69683dac assets/moretoexplore/models/item/azurite_chestplate_quartz_trim.json
 3283a3205b51cf76b6367c64ddf33af616c566fe assets/moretoexplore/models/item/azurite_chestplate_redstone_trim.json
+e46df2b5b55fb4f07bbf9849406c3aed0642ff39 assets/moretoexplore/models/item/azurite_door.json
+862927c190a5400651a4ce93867a2181b80b44d7 assets/moretoexplore/models/item/azurite_fence.json
 63e5e85182e12ce04e6827df87a66e64f3ddd964 assets/moretoexplore/models/item/azurite_helmet.json
 02522a6e4668b5b848653ce3f85c97d6b1033a7d assets/moretoexplore/models/item/azurite_helmet_amethyst_trim.json
 9941cece60b97fa2c7e4409e7cf706564bb05fb4 assets/moretoexplore/models/item/azurite_helmet_copper_trim.json
@@ -49,6 +52,7 @@ bd97abe9d198a845141a5ae936d0e488fb1dec56 assets/moretoexplore/models/item/azurit
 5b3dc5c2d25f7e4fa4102710e92dcd52595eec41 assets/moretoexplore/models/item/azurite_pickaxe.json
 971a069ef74fc7fb2a8da0633b8015bac43c2a1d assets/moretoexplore/models/item/azurite_shovel.json
 80dc9990f8fa5626f666e00504da9dde1217882c assets/moretoexplore/models/item/azurite_sword.json
+75f09efac21a5d443529244285bfc08c388b6117 assets/moretoexplore/models/item/azurite_wall.json
 21a235c6bb63639979c4bd530123124f917e0c90 assets/moretoexplore/models/item/black_opal.json
 c0d5043eb7ab45ee9b9bde2f59eae2273e336616 assets/moretoexplore/models/item/black_opal_axe.json
 ea77fd222740e90bbce2bcf47c586d00c7effda3 assets/moretoexplore/models/item/black_opal_boots.json

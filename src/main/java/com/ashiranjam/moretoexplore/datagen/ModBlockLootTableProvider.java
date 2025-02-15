@@ -50,10 +50,22 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.BLACK_OPAL_WALL.get());
         dropSelf(ModBlocks.BLACK_OPAL_TRAPDOOR.get());
 
+        dropSelf(ModBlocks.AZURITE_STAIRS.get());
+        dropSelf(ModBlocks.AZURITE_SLAB.get());
+        dropSelf(ModBlocks.AZURITE_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.AZURITE_BUTTON.get());
+        dropSelf(ModBlocks.AZURITE_FENCE.get());
+        dropSelf(ModBlocks.AZURITE_FENCE_GATE.get());
+        dropSelf(ModBlocks.AZURITE_WALL.get());
+        dropSelf(ModBlocks.AZURITE_TRAPDOOR.get());
+
         dropSelf(ModBlocks.AZURITE_BLOCK.get());
 
         this.add(ModBlocks.BLACK_OPAL_DOOR.get(),
                 block -> createDoorTable(ModBlocks.BLACK_OPAL_DOOR.get()));
+
+        this.add(ModBlocks.AZURITE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.AZURITE_DOOR.get()));
 
         this.add(ModBlocks.MYTHRIL_ORE.get(),
                 block -> createOreDrop(ModBlocks.MYTHRIL_ORE.get(), ModItems.RAW_MYTHRIL.get()));

@@ -48,7 +48,16 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_BLOCK.get())
                 .add(ModBlocks.AZURITE_ORE.get())
                 .add(ModBlocks.AZURITE_DEEPSLATE_ORE.get())
-                .add(ModBlocks.AZURITE_END_ORE.get());
+                .add(ModBlocks.AZURITE_END_ORE.get())
+                .add(ModBlocks.AZURITE_STAIRS.get())
+                .add(ModBlocks.AZURITE_SLAB.get())
+                .add(ModBlocks.AZURITE_PRESSURE_PLATE.get())
+                .add(ModBlocks.AZURITE_BUTTON.get())
+                .add(ModBlocks.AZURITE_FENCE.get())
+                .add(ModBlocks.AZURITE_FENCE_GATE.get())
+                .add(ModBlocks.AZURITE_WALL.get())
+                .add(ModBlocks.AZURITE_DOOR.get())
+                .add(ModBlocks.AZURITE_TRAPDOOR.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MYTHRIL_ORE.get())
@@ -75,10 +84,21 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLACK_OPAL_WALL.get())
                 .add(ModBlocks.BLACK_OPAL_TRAPDOOR.get())
                 .add(ModBlocks.BLACK_OPAL_DOOR.get())
-                .add(ModBlocks.AZURITE_BLOCK.get())
                 .add(ModBlocks.AZURITE_ORE.get())
                 .add(ModBlocks.AZURITE_DEEPSLATE_ORE.get())
                 .add(ModBlocks.AZURITE_END_ORE.get());
+
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ModBlocks.AZURITE_BLOCK.get())
+                .add(ModBlocks.AZURITE_STAIRS.get())
+                .add(ModBlocks.AZURITE_SLAB.get())
+                .add(ModBlocks.AZURITE_PRESSURE_PLATE.get())
+                .add(ModBlocks.AZURITE_BUTTON.get())
+                .add(ModBlocks.AZURITE_FENCE.get())
+                .add(ModBlocks.AZURITE_FENCE_GATE.get())
+                .add(ModBlocks.AZURITE_WALL.get())
+                .add(ModBlocks.AZURITE_DOOR.get())
+                .add(ModBlocks.AZURITE_TRAPDOOR.get());
 
         tag(BlockTags.FENCES)
                 .add(ModBlocks.MYTHRIL_FENCE.get())

@@ -87,5 +87,15 @@ public class ModLanguageProvider extends LanguageProvider {
         addBlock(ModBlocks.AZURITE_ORE, "Azurite Ore");
         addBlock(ModBlocks.AZURITE_DEEPSLATE_ORE, "Deepslate Azurite Ore");
         addBlock(ModBlocks.AZURITE_END_ORE, "End Azurite Ore");
+
+        addBlock(ModBlocks.AZURITE_STAIRS, "Azurite Stairs");
+        addBlock(ModBlocks.AZURITE_SLAB, "Azurite Slab");
+        addBlock(ModBlocks.AZURITE_PRESSURE_PLATE, "Azurite Pressure Plate");
+        addBlock(ModBlocks.AZURITE_BUTTON, "Azurite Button");
+        addBlock(ModBlocks.AZURITE_FENCE, "Azurite Fence");
+        addBlock(ModBlocks.AZURITE_FENCE_GATE, "Azurite Fence Gate");
+        addBlock(ModBlocks.AZURITE_WALL, "Azurite Wall");
+        addBlock(ModBlocks.AZURITE_DOOR, "Azurite Door");
+        addBlock(ModBlocks.AZURITE_TRAPDOOR, "Azurite Trapdoor");
     }
 }

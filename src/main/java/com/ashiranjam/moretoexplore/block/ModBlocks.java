@@ -111,6 +111,30 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(5, 9),
                     BlockBehaviour.Properties.of().strength(7f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> AZURITE_STAIRS = registerBlock("azurite_stairs",
+            () -> new StairBlock(ModBlocks.AZURITE_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AZURITE_SLAB = registerBlock("azurite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> AZURITE_PRESSURE_PLATE = registerBlock("azurite_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AZURITE_BUTTON = registerBlock("azurite_button",
+            () -> new ButtonBlock(BlockSetType.IRON, 20, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().noCollission()));
+
+
+    public static final RegistryObject<Block> AZURITE_FENCE = registerBlock("azurite_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AZURITE_FENCE_GATE = registerBlock("azurite_fence_gate",
+            () -> new FenceGateBlock(WoodType.ACACIA, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> AZURITE_WALL = registerBlock("azurite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> AZURITE_DOOR = registerBlock("azurite_door",
+            () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().noOcclusion()));
+    public static final RegistryObject<Block> AZURITE_TRAPDOOR = registerBlock("azurite_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().noOcclusion()));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

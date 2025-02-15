@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "azurite",
+  "key": {
+    "#": {
+      "item": "moretoexplore:azurite"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "moretoexplore:azurite_stairs"
+  }
+}
