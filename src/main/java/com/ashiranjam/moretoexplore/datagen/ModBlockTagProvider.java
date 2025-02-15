@@ -44,7 +44,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLACK_OPAL_FENCE_GATE.get())
                 .add(ModBlocks.BLACK_OPAL_WALL.get())
                 .add(ModBlocks.BLACK_OPAL_DOOR.get())
-                .add(ModBlocks.BLACK_OPAL_TRAPDOOR.get());
+                .add(ModBlocks.BLACK_OPAL_TRAPDOOR.get())
+                .add(ModBlocks.AZURITE_BLOCK.get())
+                .add(ModBlocks.AZURITE_ORE.get())
+                .add(ModBlocks.AZURITE_DEEPSLATE_ORE.get())
+                .add(ModBlocks.AZURITE_END_ORE.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MYTHRIL_ORE.get())
@@ -70,7 +74,11 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.BLACK_OPAL_FENCE_GATE.get())
                 .add(ModBlocks.BLACK_OPAL_WALL.get())
                 .add(ModBlocks.BLACK_OPAL_TRAPDOOR.get())
-                .add(ModBlocks.BLACK_OPAL_DOOR.get());
+                .add(ModBlocks.BLACK_OPAL_DOOR.get())
+                .add(ModBlocks.AZURITE_BLOCK.get())
+                .add(ModBlocks.AZURITE_ORE.get())
+                .add(ModBlocks.AZURITE_DEEPSLATE_ORE.get())
+                .add(ModBlocks.AZURITE_END_ORE.get());
 
         tag(BlockTags.FENCES)
                 .add(ModBlocks.MYTHRIL_FENCE.get())

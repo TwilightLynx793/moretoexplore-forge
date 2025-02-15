@@ -1,4 +1,5 @@
-// 1.21.1	2025-02-14T17:17:35.0381319	Item Models: moretoexplore
+// 1.21.1	2025-02-15T06:52:36.3837122	Item Models: moretoexplore
+2ccea4734407c256c850db8a272f60d9b43474c0 assets/moretoexplore/models/item/azurite.json
 21a235c6bb63639979c4bd530123124f917e0c90 assets/moretoexplore/models/item/black_opal.json
 c0d5043eb7ab45ee9b9bde2f59eae2273e336616 assets/moretoexplore/models/item/black_opal_axe.json
 ea77fd222740e90bbce2bcf47c586d00c7effda3 assets/moretoexplore/models/item/black_opal_boots.json
@@ -106,5 +107,6 @@ aca4ed3b9993c7e8b0e618c650e0b60b463d9949 assets/moretoexplore/models/item/mythri
 4372712691f474a29d6acfdad72e1af872da1dfd assets/moretoexplore/models/item/mythril_shovel.json
 51c974b16bf8c13e3430dd788a7ba172d075bc96 assets/moretoexplore/models/item/mythril_sword.json
 e7986ee1d0bd64104cf9c287b3cddd94293ea0d2 assets/moretoexplore/models/item/mythril_wall.json
+f29fedd0debd02c9e7e5055adcf14387b15bcccb assets/moretoexplore/models/item/raw_azurite.json
 d43a98a9d737eb326141bff5c7ec1691521c5428 assets/moretoexplore/models/item/raw_black_opal.json
 16debc1c83fb12c86a7a917a4bb58f3b9355335d assets/moretoexplore/models/item/raw_mythril.json

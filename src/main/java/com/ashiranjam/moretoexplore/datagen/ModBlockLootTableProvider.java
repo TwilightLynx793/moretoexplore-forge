@@ -50,6 +50,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.BLACK_OPAL_WALL.get());
         dropSelf(ModBlocks.BLACK_OPAL_TRAPDOOR.get());
 
+        dropSelf(ModBlocks.AZURITE_BLOCK.get());
 
         this.add(ModBlocks.BLACK_OPAL_DOOR.get(),
                 block -> createDoorTable(ModBlocks.BLACK_OPAL_DOOR.get()));
@@ -65,6 +66,13 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get(),
                 block -> createOreDrop(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE.get(), ModItems.RAW_BLACK_OPAL.get()));
+
+        this.add(ModBlocks.AZURITE_ORE.get(),
+                block -> createOreDrop(ModBlocks.AZURITE_ORE.get(), ModItems.RAW_AZURITE.get()));
+        this.add(ModBlocks.AZURITE_DEEPSLATE_ORE.get(),
+                block -> createOreDrop(ModBlocks.AZURITE_DEEPSLATE_ORE.get(), ModItems.RAW_AZURITE.get()));
+        this.add(ModBlocks.AZURITE_END_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.AZURITE_END_ORE.get(), ModItems.RAW_AZURITE.get(), 2, 4));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

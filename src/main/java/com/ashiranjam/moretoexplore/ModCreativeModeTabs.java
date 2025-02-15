@@ -77,6 +77,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.BLACK_OPAL_DOOR.get());
                         output.accept(ModBlocks.BLACK_OPAL_TRAPDOOR.get());
 
+                        output.accept(ModItems.AZURITE.get());
+                        output.accept(ModItems.RAW_AZURITE.get());
+                        output.accept(ModBlocks.AZURITE_BLOCK.get());
+                        output.accept(ModBlocks.AZURITE_ORE.get());
+                        output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.AZURITE_END_ORE.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

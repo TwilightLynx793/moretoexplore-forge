@@ -49,6 +49,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.BLACK_OPAL.get());
         basicItem(ModItems.RAW_BLACK_OPAL.get());
 
+        basicItem(ModItems.AZURITE.get());
+        basicItem(ModItems.RAW_AZURITE.get());
+
         handheldItem(ModItems.MYTHRIL_SWORD);
         handheldItem(ModItems.MYTHRIL_PICKAXE);
         handheldItem(ModItems.MYTHRIL_SHOVEL);

@@ -39,6 +39,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> BLACK_OPAL_ARMOR_ITEMS = List.of(ModItems.BLACK_OPAL_HELMET.get(), ModItems.BLACK_OPAL_CHESTPLATE.get(),
                 ModItems.BLACK_OPAL_LEGGINGS.get(), ModItems.BLACK_OPAL_BOOTS.get());
 
+        List<ItemLike> AZURITE_SMELTABLES = List.of(ModItems.RAW_AZURITE.get(),
+                ModBlocks.AZURITE_ORE.get(), ModBlocks.AZURITE_DEEPSLATE_ORE.get(), ModBlocks.AZURITE_END_ORE.get());
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MYTHRIL_BLOCK.get())
                 .pattern("MMM")
                 .pattern("MMM")
@@ -129,6 +132,20 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.BLACK_OPAL.get()), has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
         trapdoorBuilder(ModBlocks.BLACK_OPAL_TRAPDOOR.get(), Ingredient.of(ModItems.BLACK_OPAL.get())).group("black_opal")
                 .unlockedBy(getHasName(ModItems.BLACK_OPAL.get()), has(ModItems.BLACK_OPAL.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.AZURITE_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.AZURITE.get())
+                .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE.get())).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.AZURITE.get(), 9)
+                .requires(ModBlocks.AZURITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.AZURITE_BLOCK.get()), has(ModBlocks.AZURITE_BLOCK.get())).save(pRecipeOutput);
+
+        oreSmelting(pRecipeOutput, AZURITE_SMELTABLES, RecipeCategory.MISC, ModItems.AZURITE.get(), 0.25f, 200, "azurite");
+        oreBlasting(pRecipeOutput, AZURITE_SMELTABLES, RecipeCategory.MISC, ModItems.AZURITE.get(), 0.25f, 100, "azurite");
     }
 
     protected static void ArmorRecipeBuilder(List<ItemLike> result, ItemLike craftingItem, RecipeOutput output){

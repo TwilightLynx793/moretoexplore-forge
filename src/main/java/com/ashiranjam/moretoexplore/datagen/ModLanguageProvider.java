@@ -41,6 +41,9 @@ public class ModLanguageProvider extends LanguageProvider {
         addItem(ModItems.BLACK_OPAL_LEGGINGS, "Black Opal Leggings");
         addItem(ModItems.BLACK_OPAL_BOOTS, "Black Opal Boots");
 
+        addItem(ModItems.AZURITE, "Azurite");
+        addItem(ModItems.RAW_AZURITE, "Raw Azurite");
+
         addBlock(ModBlocks.MYTHRIL_BLOCK, "Mythril Block");
         addBlock(ModBlocks.RAW_MYTHRIL_BLOCK, "Raw Mythril Block");
         addBlock(ModBlocks.MYTHRIL_ORE, "Mythril Ore");
@@ -68,5 +71,10 @@ public class ModLanguageProvider extends LanguageProvider {
         addBlock(ModBlocks.BLACK_OPAL_WALL, "Black Opal Wall");
         addBlock(ModBlocks.BLACK_OPAL_DOOR, "Black Opal Door");
         addBlock(ModBlocks.BLACK_OPAL_TRAPDOOR, "Black Opal Trapdoor");
+
+        addBlock(ModBlocks.AZURITE_BLOCK, "Azurite Block");
+        addBlock(ModBlocks.AZURITE_ORE, "Azurite Ore");
+        addBlock(ModBlocks.AZURITE_DEEPSLATE_ORE, "Deepslate Azurite Ore");
+        addBlock(ModBlocks.AZURITE_END_ORE, "End Azurite Ore");
     }
 }

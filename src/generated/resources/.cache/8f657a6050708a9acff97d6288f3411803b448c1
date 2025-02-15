@@ -1,6 +1,0 @@
-// 1.21.1	2025-02-14T14:50:37.1500541	Tags for minecraft:block mod id moretoexplore
-2f77a5194d372c7d6a5419324ef8170d13b22c68 data/minecraft/tags/block/fences.json
-a0c7790a7317f0e0b82e8482525f968e8d230a27 data/minecraft/tags/block/fence_gates.json
-ab46b56f5c8acce94c417408e52eb84b6d0d8e6e data/minecraft/tags/block/mineable/pickaxe.json
-77ff3249c47dbe6afdbd96bf9acab1bd4ae92106 data/minecraft/tags/block/needs_iron_tool.json
-6732c2e1864a6e54efedee053ad5b36ccaab7a16 data/minecraft/tags/block/walls.json
