@@ -42,6 +42,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> AZURITE_SMELTABLES = List.of(ModItems.RAW_AZURITE.get(),
                 ModBlocks.AZURITE_ORE.get(), ModBlocks.AZURITE_DEEPSLATE_ORE.get(), ModBlocks.AZURITE_END_ORE.get());
 
+        List<ItemLike> AZURITE_TOOLS = List.of(ModItems.AZURITE_PICKAXE.get(), ModItems.AZURITE_AXE.get(),
+                ModItems.AZURITE_SWORD.get(), ModItems.AZURITE_SHOVEL.get(), ModItems.AZURITE_HOE.get());
+
+        List<ItemLike> AZURITE_ARMOR_ITEMS = List.of(ModItems.AZURITE_HELMET.get(), ModItems.AZURITE_CHESTPLATE.get(),
+                ModItems.AZURITE_LEGGINGS.get(), ModItems.AZURITE_BOOTS.get());
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MYTHRIL_BLOCK.get())
                 .pattern("MMM")
                 .pattern("MMM")
@@ -146,6 +152,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, AZURITE_SMELTABLES, RecipeCategory.MISC, ModItems.AZURITE.get(), 0.25f, 200, "azurite");
         oreBlasting(pRecipeOutput, AZURITE_SMELTABLES, RecipeCategory.MISC, ModItems.AZURITE.get(), 0.25f, 100, "azurite");
+
+        ToolRecipeBuilder(AZURITE_TOOLS, ModItems.AZURITE.get(), pRecipeOutput);
+        ArmorRecipeBuilder(AZURITE_ARMOR_ITEMS, ModItems.AZURITE.get(), pRecipeOutput);
     }
 
     protected static void ArmorRecipeBuilder(List<ItemLike> result, ItemLike craftingItem, RecipeOutput output){

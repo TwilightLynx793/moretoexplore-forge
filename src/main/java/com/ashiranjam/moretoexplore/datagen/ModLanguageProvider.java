@@ -44,6 +44,17 @@ public class ModLanguageProvider extends LanguageProvider {
         addItem(ModItems.AZURITE, "Azurite");
         addItem(ModItems.RAW_AZURITE, "Raw Azurite");
 
+        addItem(ModItems.AZURITE_PICKAXE, "Azurite Pickaxe");
+        addItem(ModItems.AZURITE_AXE, "Azurite Axe");
+        addItem(ModItems.AZURITE_SWORD, "Azurite Sword");
+        addItem(ModItems.AZURITE_SHOVEL, "Azurite Shovel");
+        addItem(ModItems.AZURITE_HOE, "Azurite Hoe");
+
+        addItem(ModItems.AZURITE_HELMET, "Azurite Helmet");
+        addItem(ModItems.AZURITE_CHESTPLATE, "Azurite Chestplate");
+        addItem(ModItems.AZURITE_LEGGINGS, "Azurite Leggings");
+        addItem(ModItems.AZURITE_BOOTS, "Azurite Boots");
+
         addBlock(ModBlocks.MYTHRIL_BLOCK, "Mythril Block");
         addBlock(ModBlocks.RAW_MYTHRIL_BLOCK, "Raw Mythril Block");
         addBlock(ModBlocks.MYTHRIL_ORE, "Mythril Ore");

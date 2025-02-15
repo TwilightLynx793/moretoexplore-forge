@@ -64,6 +64,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.BLACK_OPAL_AXE);
         handheldItem(ModItems.BLACK_OPAL_HOE);
 
+        handheldItem(ModItems.AZURITE_SWORD);
+        handheldItem(ModItems.AZURITE_PICKAXE);
+        handheldItem(ModItems.AZURITE_SHOVEL);
+        handheldItem(ModItems.AZURITE_AXE);
+        handheldItem(ModItems.AZURITE_HOE);
+
         trimmedArmorItem(ModItems.MYTHRIL_HELMET);
         trimmedArmorItem(ModItems.MYTHRIL_CHESTPLATE);
         trimmedArmorItem(ModItems.MYTHRIL_LEGGINGS);
@@ -73,6 +79,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.BLACK_OPAL_CHESTPLATE);
         trimmedArmorItem(ModItems.BLACK_OPAL_LEGGINGS);
         trimmedArmorItem(ModItems.BLACK_OPAL_BOOTS);
+
+        trimmedArmorItem(ModItems.AZURITE_HELMET);
+        trimmedArmorItem(ModItems.AZURITE_CHESTPLATE);
+        trimmedArmorItem(ModItems.AZURITE_LEGGINGS);
+        trimmedArmorItem(ModItems.AZURITE_BOOTS);
 
         buttonItem(ModBlocks.MYTHRIL_BUTTON, ModBlocks.MYTHRIL_BLOCK);
         fenceItem(ModBlocks.MYTHRIL_FENCE, ModBlocks.MYTHRIL_BLOCK);

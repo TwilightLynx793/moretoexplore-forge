@@ -13,4 +13,7 @@ public class ModToolTiers {
     public static final Tier BLACK_OPAL = new ForgeTier(1200, 8.5f, 3.0f, 13,
             ModTags.Blocks.NEEDS_BLACK_OPAL_TOOL, () -> Ingredient.of(ModItems.BLACK_OPAL.get()),
             ModTags.Blocks.INCORRECT_FOR_BLACK_OPAL_TOOL);
+
+    public static final Tier AZURITE = new ForgeTier(1400, 6, 4f, 18,
+            ModTags.Blocks.NEEDS_AZURITE_TOOL, () -> Ingredient.of(ModItems.AZURITE.get()), ModTags.Blocks.INCORRECT_FOR_AZURITE_TOOL);
 }

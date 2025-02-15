@@ -36,6 +36,15 @@ public class ModArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 7);
             }), 11, 0f, 0f, () -> ModItems.MYTHRIL_INGOT.get());
 
+    public static final Holder<ArmorMaterial> AZURITE_ARMOR_MATERIAL = register("azurite", Util.make(new EnumMap<>(ArmorItem.Type.class),
+            attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 5);
+                attribute.put(ArmorItem.Type.LEGGINGS, 7);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 11);
+                attribute.put(ArmorItem.Type.HELMET, 6);
+                attribute.put(ArmorItem.Type.BODY, 8);
+            }), 15, 0f, 0.1f, () -> ModItems.AZURITE.get());
+
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,
                                                   Supplier<Item> ingredientItem) {

@@ -84,6 +84,17 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.AZURITE_END_ORE.get());
 
+                        output.accept(ModItems.AZURITE_PICKAXE.get());
+                        output.accept(ModItems.AZURITE_AXE.get());
+                        output.accept(ModItems.AZURITE_SWORD.get());
+                        output.accept(ModItems.AZURITE_SHOVEL.get());
+                        output.accept(ModItems.AZURITE_HOE.get());
+
+                        output.accept(ModItems.AZURITE_HELMET.get());
+                        output.accept(ModItems.AZURITE_CHESTPLATE.get());
+                        output.accept(ModItems.AZURITE_LEGGINGS.get());
+                        output.accept(ModItems.AZURITE_BOOTS.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {
