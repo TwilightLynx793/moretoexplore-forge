@@ -55,6 +55,9 @@ public class ModLanguageProvider extends LanguageProvider {
         addItem(ModItems.AZURITE_LEGGINGS, "Azurite Leggings");
         addItem(ModItems.AZURITE_BOOTS, "Azurite Boots");
 
+        addItem(ModItems.BISMUTH, "Bismuth");
+        addItem(ModItems.RAW_BISMUTH, "Raw Bismuth");
+
         addBlock(ModBlocks.MYTHRIL_BLOCK, "Mythril Block");
         addBlock(ModBlocks.RAW_MYTHRIL_BLOCK, "Raw Mythril Block");
         addBlock(ModBlocks.MYTHRIL_ORE, "Mythril Ore");
@@ -97,5 +100,7 @@ public class ModLanguageProvider extends LanguageProvider {
         addBlock(ModBlocks.AZURITE_WALL, "Azurite Wall");
         addBlock(ModBlocks.AZURITE_DOOR, "Azurite Door");
         addBlock(ModBlocks.AZURITE_TRAPDOOR, "Azurite Trapdoor");
+
+        addBlock(ModBlocks.BISMUTH_BLOCK, "Bismuth Block");
     }
 }

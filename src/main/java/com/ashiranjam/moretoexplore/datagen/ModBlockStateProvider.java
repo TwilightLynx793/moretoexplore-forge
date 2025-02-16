@@ -29,6 +29,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.AZURITE_ORE);
         blockWithItem(ModBlocks.AZURITE_DEEPSLATE_ORE);
         blockWithItem(ModBlocks.AZURITE_END_ORE);
+        blockWithItem(ModBlocks.BISMUTH_BLOCK);
 
 
         stairsBlock(ModBlocks.MYTHRIL_STAIRS.get(), blockTexture(ModBlocks.MYTHRIL_BLOCK.get()));

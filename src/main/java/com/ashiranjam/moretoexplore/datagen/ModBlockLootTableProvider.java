@@ -61,6 +61,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         dropSelf(ModBlocks.AZURITE_BLOCK.get());
 
+        dropSelf(ModBlocks.BISMUTH_BLOCK.get());
+
         this.add(ModBlocks.BLACK_OPAL_DOOR.get(),
                 block -> createDoorTable(ModBlocks.BLACK_OPAL_DOOR.get()));
 

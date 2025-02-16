@@ -1,7 +1,8 @@
-// 1.21.1	2025-02-15T18:45:20.7913578	Tags for minecraft:block mod id moretoexplore
+// 1.21.1	2025-02-16T18:41:27.8520396	Tags for minecraft:block mod id moretoexplore
+637c1a5c23ea14d2e99d92408e913cefb17aa9e4 data/forge/tags/block/needs_netherite_tool.json
 2f77a5194d372c7d6a5419324ef8170d13b22c68 data/minecraft/tags/block/fences.json
 a0c7790a7317f0e0b82e8482525f968e8d230a27 data/minecraft/tags/block/fence_gates.json
-b1af8de565ce036cde06e87fa95aa860d1db1ae3 data/minecraft/tags/block/mineable/pickaxe.json
+b65735e9e759dac2704a523afa1512a90e3d9ca3 data/minecraft/tags/block/mineable/pickaxe.json
 93c484445ca89a591718998037c8b395544d09cf data/minecraft/tags/block/needs_diamond_tool.json
 f3ac84b6030b4a105b3f674c5e20ed80954c3b87 data/minecraft/tags/block/needs_iron_tool.json
 6732c2e1864a6e54efedee053ad5b36ccaab7a16 data/minecraft/tags/block/walls.json

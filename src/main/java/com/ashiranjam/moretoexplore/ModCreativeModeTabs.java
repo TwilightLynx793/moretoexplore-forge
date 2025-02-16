@@ -108,6 +108,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.AZURITE_DOOR.get());
                         output.accept(ModBlocks.AZURITE_TRAPDOOR.get());
 
+                        output.accept(ModItems.BISMUTH.get());
+                        output.accept(ModItems.RAW_BISMUTH.get());
+                        output.accept(ModBlocks.BISMUTH_BLOCK.get());
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -132,6 +132,12 @@ public class ModItems {
             () -> new ArmorItem(ModArmorMaterials.AZURITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(34))));
 
+    public static final RegistryObject<Item> BISMUTH = ITEMS.register("bismuth",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC).fireResistant()));
+
+    public static final RegistryObject<Item> RAW_BISMUTH = ITEMS.register("raw_bismuth",
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

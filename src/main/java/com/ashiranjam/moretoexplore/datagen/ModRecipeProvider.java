@@ -176,6 +176,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         trapdoorBuilder(ModBlocks.AZURITE_TRAPDOOR.get(), Ingredient.of(ModItems.AZURITE.get())).group("azurite")
                 .unlockedBy(getHasName(ModItems.AZURITE.get()), has(ModItems.AZURITE.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BISMUTH_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.BISMUTH.get())
+                .unlockedBy(getHasName(ModItems.BISMUTH.get()), has(ModItems.BISMUTH.get())).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BISMUTH.get(), 9)
+                .requires(ModBlocks.BISMUTH_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.BISMUTH_BLOCK.get()), has(ModBlocks.BISMUTH_BLOCK.get())).save(pRecipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BISMUTH.get(), 1)
+                .requires(ModItems.RAW_BISMUTH.get())
+                .requires(Items.NETHERITE_INGOT, 2)
+                .unlockedBy(getHasName(ModItems.RAW_BISMUTH.get()), has(ModItems.RAW_BISMUTH.get())).save(pRecipeOutput, "bismuth_from_netherite_ingot");
+
     }
 
     protected static void ArmorRecipeBuilder(List<ItemLike> result, ItemLike craftingItem, RecipeOutput output){

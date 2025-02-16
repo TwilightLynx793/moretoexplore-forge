@@ -1,4 +1,4 @@
-// 1.21.1	2025-02-15T18:45:20.8073607	Block States: moretoexplore
+// 1.21.1	2025-02-16T18:41:27.8560375	Block States: moretoexplore
 b08f3e1f86daa74445def6e75179a3a5f961b6aa assets/moretoexplore/blockstates/azurite_block.json
 35b47aad0a86dca25f2b280bf552a289ffd54eb1 assets/moretoexplore/blockstates/azurite_button.json
 ad824379a1375bd49599b487699cbaf1f10d0c82 assets/moretoexplore/blockstates/azurite_deepslate_ore.json
@@ -12,6 +12,7 @@ ffe84db8fbd1775e627de166ee9171d62b39de4e assets/moretoexplore/blockstates/azurit
 7d911fcb9889db4a420ce05abac63424f10daa32 assets/moretoexplore/blockstates/azurite_stairs.json
 acd573b4bd9a8d7da37d97c74523690395aa9882 assets/moretoexplore/blockstates/azurite_trapdoor.json
 ae5d6a5e36d61a0009f184e15e99616c824083c1 assets/moretoexplore/blockstates/azurite_wall.json
+ddba2e88dfc75c6922d20372f3c2fafa59710ebd assets/moretoexplore/blockstates/bismuth_block.json
 23fed134409f2e80112db0bd7847665b4f5fcadd assets/moretoexplore/blockstates/black_opal_block.json
 ac083380dd6c1116c1c073b0b73de4be6b4d4c5b assets/moretoexplore/blockstates/black_opal_button.json
 77ce2c05a18d1cc75c979c340c875e830b5c0c99 assets/moretoexplore/blockstates/black_opal_door.json
@@ -69,6 +70,7 @@ a9cc9f4c109fc16154b28ee3e0b09082d742c727 assets/moretoexplore/models/block/azuri
 79135a8a55c7e7f984da209a19383d89dbd29a44 assets/moretoexplore/models/block/azurite_wall_post.json
 332fe8a00bd8fd003086d41b17729fee919b006b assets/moretoexplore/models/block/azurite_wall_side.json
 8bb08ccc5f2478403916dcf618ed299cbe18de50 assets/moretoexplore/models/block/azurite_wall_side_tall.json
+206882579cf8c3767dc62e1d92a701bd9f2c39ea assets/moretoexplore/models/block/bismuth_block.json
 8075c4ea3cdaf6681d152a563f8e4bfaec891059 assets/moretoexplore/models/block/black_opal_block.json
 402c19fe51797ada18a5412154741a7f3520898d assets/moretoexplore/models/block/black_opal_button.json
 b7d5d23e24dab0f5628d426276ef772ca81c3e06 assets/moretoexplore/models/block/black_opal_button_pressed.json
@@ -133,6 +135,7 @@ a30a6ba115e5387bdf088e9129664105b1934069 assets/moretoexplore/models/block/mythr
 1f8c39817942b11db6d4388eed90cb7189154ec5 assets/moretoexplore/models/item/azurite_slab.json
 60ee697d86f525c847f4a147b4e4e4dd5fece0f8 assets/moretoexplore/models/item/azurite_stairs.json
 73fe9a9838ce5ad40db823736f3e16edb364c9e3 assets/moretoexplore/models/item/azurite_trapdoor.json
+0a2ec73b4e9138b3e41e53dbb699f15ee1bd7070 assets/moretoexplore/models/item/bismuth_block.json
 74399b2fe330d495975f494aa73bcc6afbdc8463 assets/moretoexplore/models/item/black_opal_block.json
 4897c6edac95d70d420b759585cb2c4abd233775 assets/moretoexplore/models/item/black_opal_fence_gate.json
 270c95a8cc4023805b33a7a21e60dbf543814e8b assets/moretoexplore/models/item/black_opal_ore.json

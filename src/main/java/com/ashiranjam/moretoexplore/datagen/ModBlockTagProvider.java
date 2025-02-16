@@ -7,6 +7,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -57,7 +58,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_FENCE_GATE.get())
                 .add(ModBlocks.AZURITE_WALL.get())
                 .add(ModBlocks.AZURITE_DOOR.get())
-                .add(ModBlocks.AZURITE_TRAPDOOR.get());
+                .add(ModBlocks.AZURITE_TRAPDOOR.get())
+                .add(ModBlocks.BISMUTH_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MYTHRIL_ORE.get())
@@ -99,6 +101,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModBlocks.AZURITE_WALL.get())
                 .add(ModBlocks.AZURITE_DOOR.get())
                 .add(ModBlocks.AZURITE_TRAPDOOR.get());
+
+        tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.BISMUTH_BLOCK.get());
 
         tag(BlockTags.FENCES)
                 .add(ModBlocks.MYTHRIL_FENCE.get())

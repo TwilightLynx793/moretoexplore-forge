@@ -5,6 +5,7 @@ import com.ashiranjam.moretoexplore.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -136,6 +137,16 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().noOcclusion()));
 
 
+    public static final RegistryObject<Block> BISMUTH_BLOCK = registerBlock("bismuth_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4.5f).requiresCorrectToolForDrops().sound(SoundType.METAL)), Rarity.EPIC);
+
+
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, Rarity rarity) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerRareBlockItem(name, toReturn, rarity);
+        return toReturn;
+    }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -145,6 +156,10 @@ public class ModBlocks {
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    private static <T extends Block> void registerRareBlockItem(String name, RegistryObject<T> block, Rarity rarity) {
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties().rarity(rarity)));
     }
 
     public static void register(IEventBus eventBus) {
